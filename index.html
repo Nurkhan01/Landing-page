@@ -1,356 +1,754 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Стоматология в Алмате">
-    <meta name="author" content="DentalExpert">
-    <title>Стоматология</title>
-    <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-<link rel="stylesheet" href="css/site.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <!-- <link href="carousel.css" rel="stylesheet"> -->
-  </head>
-  <body>
-<header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
-        <a href="/" class="navbar-brand mr-0">DentalExpert</a>
-        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-            <ul class="navbar-nav mx-auto text-left">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">О нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Преимущество</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Цены</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Отзывы</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav flex-row justify-content-left flex-nowrap">
-                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-telegram" aria-hidden="true"></i></a> </li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
-            </ul>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Стоматология в Алмате">
+  <meta name="author" content="DentalExpert">
+  <title>Стоматология</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <a href="#" class="header_logo">
+          <img src="images/logo.png" alt="">
+        </a>
+        <div class="header__burger">
+          <span></span>
         </div>
-    </nav>
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" poster="image/background.jpg">
-        <source src="video/Dentist_6.mp4" type="video/mp4">
-        <source src="video/Dentist_6.webm" type="video/webm">
-        <source src="video/Dentist_6.ogv" type="video/ogv">
-    </video>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li>
+              <a href="#" class="header__link">Главная</a>
+            </li>
+            <li>
+              <a href="#about" class="header__link">О нас</a>
+            </li>
+            <li>
+              <a href="#services" class="header__link">Услуги</a>
+            </li>
+            <li>
+              <a href="#price-list" class="header__link">Цены</a>
+            </li>
+            <li>
+              <a href="#review" class="header__link">Отзовы</a>
+            </li>
+            <li>
+              <a href="#contact" class="header__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-</header>
+  </header>
 
-<!-- Banner section -->
-<section class="banner-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7 banner-text text-dark">
-        <h4>Консультация и первичный прием БЕСПЛАТНЫЙ</h4>
-        <p>Оставьте заявку и мы с вами свяжемся:</p>
+  <div class="video-box">
+  	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="video/Dentist_6.mp4" type="video/mp4">
+      <source src="video/Dentist_6.webm" type="video/webm">
+      <source src="video/Dentist_6.ogv" type="video/ogv">
+  	</video>
+
+  	<div class="video-content">
+      <div class="text-center">
+        <h1 class="display-4">Стоматология Алматы</h1>
+        <a href="#" class="btn text-uppercase">Заказать</a>
       </div>
-      <div class="col-lg-5 text-lg-right">
-        <a class="btn btn-info btn-callBack" href="#" role="button">Оставить заявку</a>
-      </div>
-    </div>
+  	 </div>
   </div>
-</section>
-<!-- Banner section end -->
 
-<!-- About -->
-<section id = "about" class="section-about pb-72 bg-light" id="about">
-	<div class="about">
-		<div class="about__holder">
+  <!-- Carusel section -->
+  <!-- <section class="head-carusel">
+    <div class="carusel">
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="images/slide01.jpg" alt=""></div>
+      <div class="item"><img src="images/slide02.jpg" alt=""></div>
+      <div class="item"><img src="images/slide03.jpg" alt=""></div>
+    </div>
+   </div>
+    <div class="carusel-text">
+      <h1>Стоматология для жизни</h1>
+      <p>Если твоя улыбка тебе не идет, то ты должен идти ко мне! Семейная стоматология с женским акцентом.</p>
+      <a href="#" class="btn text-uppercase">Заказать</a>
+    </div>
+  </section> -->
+  <!-- Carusel section end -->
 
-			<figure class="about__img-holder">
-				<div data-aos="fade-right">
-					<div class="animate-container img-holder">
-						<img src="image/Stomatolog.jpg" alt="about us">
-					</div>
-				</div>
-			</figure>
+<!-- Boxes section -->
+  <section class="boxes-section">
+    <div class="container header-boxes">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  text-left header-box-1">
+          <img src="images/certification.png" alt="">
+          <h3>Сертификация</h3>
+          <p>Панчетта ут из тушеной говядины, свиная отбивная из аликвипа с тремя наконечниками. Коровья говядина eu бекон jowl pastrami.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  text-left header-box-2">
+          <img src="images/time.png" alt="">
+          <h3>24/7 Открыто</h3>
+          <p>Долор солонина ипсум, филе миньон, филе нулья, миньон. Boudin landjaeger свиная грудинка.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  text-left header-box-3">
+          <img src="images/personal.png" alt="">
+          <h3>Профессиональный персонал</h3>
+          <p>Привет мир. Как дела у тебя?</p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  text-left header-box-4">
+          <img src="images/like.png" alt="">
+          <h3>Справедливые цены</h3>
+          <p>Куриная лепешка Lorem, филе филе миньон, молотая голень, и id labourum short.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Boxes section end -->
 
-			<div class="about__info">
-				<div data-aos="fade-left">
-					<div class="animate-container">
-						<div class="title-row mb-40">
-							<h3 class="section-subtitle section-subtitle--line">О нас</h3>
-							<h2 class="section-title">Lorem Ipsum is simply dummy</h2>
-								<p class="section-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+<!-- About section -->
+<section class="about section_padding_110" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="side-item about-item">
+					<div class="row display_table_md">
+						<div class="col-md-6 display_table_cell_md">
+							<div class="with_backing">
+								<img src="./images/about.jpg" alt="" class="border_radius_4">
 							</div>
-
-							<!-- Accordion -->
-							<div id="accordion-1">
-
-								<div class="accordion">
-									<div class="accordion__panel">
-										<div class="accordion__heading" id="heading-1">
-											<a data-toggle="collapse" href="#collapse-1" class="accordion__link accordion--is-open" aria-expanded="true" aria-controls="collapse-1">
-												<span class="accordion__toggle"></span>
-												<h4 class="accordion__title">Кто мы такие</h4>
-											</a>
-										</div>
-										<div id="collapse-1" class="collapse show" data-parent="#accordion-1" role="tabpanel" aria-labelledby="heading-1">
-											<div class="accordion__body">
-												<p>
-													Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-												</p>
-											</div>
-										</div>
-									</div>
+						</div>
+						<div class="col-md-6 display_table_cell_md">
+							<div class="item-content">
+								<h2 class="section_header margin_0">Мы DentalExpert</h2>
+								<hr class="main_bg_color-about dividersize_2_70 inline-block">
+								<p>
+									Зубные протезы действительно улучшают нашу улыбку и общий внешний вид. Они не только делают нас лучше, но и облегчают нашу жизнь. Наслаждайтесь простыми вещами, такими как еда, общение и улыбка. Забудьте о неудобных социальных встречах. В центре нашего внимания находится ваше общее самочувствие и помощь в достижении оптимального здоровья и эстетики.
+								</p>
+								<p class="bold text-uppercase bottommargin_2">
+									Стоматологическая профилактика
+									<span class="bold pull-right">75%</span>
+								</p>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-success" role="progressbar" data-transitiongoal="75">
+								  </div>
 								</div>
 
-								<div class="accordion">
-									<div class="accordion__panel">
-										<div class="accordion__heading" id="heading-2">
-											<a data-toggle="collapse" href="#collapse-2" class="accordion__link" aria-expanded="true" aria-controls="collapse-2">
-												<span class="accordion__toggle"></span>
-												<h4 class="accordion__title">Наша философия</h4>
-											</a>
-										</div>
-										<div id="collapse-2" class="collapse" data-parent="#accordion-1" role="tabpanel" aria-labelledby="heading-2">
-											<div class="accordion__body">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-											</div>
-										</div>
-									</div>
+								<p class="bold text-uppercase bottommargin_2">
+									Обработка фтором
+									<span class="bold pull-right">50%</span>
+								</p>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-success" role="progressbar" data-transitiongoal="50">
+								  </div>
 								</div>
 
-								<div class="accordion">
-									<div class="accordion__panel">
-										<div class="accordion__heading" id="heading-3">
-											<a data-toggle="collapse" href="#collapse-3" class="accordion__link" aria-expanded="true" aria-controls="collapse-3">
-												<span class="accordion__toggle"></span>
-												<h4 class="accordion__title">Как мы работаем</h4>
-											</a>
-										</div>
-										<div id="collapse-3" class="collapse" data-parent="#accordion-1" role="tabpanel" aria-labelledby="heading-3">
-											<div class="accordion__body">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-											</div>
-										</div>
-									</div>
+								<p class="bold text-uppercase bottommargin_2">
+									Удаление зуба
+									<span class="bold pull-right">90%</span>
+								</p>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-success" role="progressbar" data-transitiongoal="90">
+								  </div>
 								</div>
 
-							</div> <!-- end accordion -->
+								<p class="bold text-uppercase bottommargin_2">
+									Заполнение полости
+									<span class="bold pull-right">85%</span>
+								</p>
+								<div class="progress">
+								  <div class="progress-bar progress-bar-success" role="progressbar" data-transitiongoal="85">
+								  </div>
+								</div>
 
+								<!-- <a href="about.html" class="theme_button color1 topmargin_10">learn about us</a> -->
+
+							</div>
 						</div>
 					</div>
-				</div> <!-- end about__info -->
-
+				</div>
 			</div>
 		</div>
-	</section>
-  <!-- end about -->
+	</div>
+</section>
+<!-- About section end -->
 
-<!-- Advantages section -->
-<section id="advantages">
-    <div class="container">
-      <div class="our_advantages text-center">
-        <h3>Наши преимущества</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-           when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
+<!-- Services <section> -->
+  <section class="services" id="services">
+    <div class="container services-boxes">
+      <h2 class="text-center">Наши услуги</h2>
       <div class="row">
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="advantages-box">
-            <img src="image/adv-item1.png" alt="" data-aos="fade-up">
-            <h4>Консультации</h4>
-            <p>терапевтов, имплантологов, пародонтов, ортопедов.</p>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="services-box text-center">
+            <img src="images/tooth-1.png" alt="">
+            <h3>Защита зубов</h3>
+            <p>Есть только 2 стоматологических направления, которые специализируются только на эстетике зубов ...</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="advantages-box">
-            <img src="image/adv-item2.png" alt="" data-aos="fade-down">
-            <h4>Страховые компании</h4>
-            <p>ваша страховая наверняка есть в нашем списке!</p>
+        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+          <div class="services-box text-center">
+            <img src="images/tooth-2.png" alt="">
+            <h3>Зубной камень</h3>
+            <p>Типы мостов могут быть разными, в зависимости от того, как они ...</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="advantages-box">
-            <img src="image/adv-item3.png" alt="" data-aos="fade-right">
-            <h4>Более 5000 клиентов</h4>
-            <p>За более чем 8 лет успешной работы в Казахстане.</p>
+        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+          <div class="services-box">
+            <img src="images/tooth-3.png" alt="">
+            <h3>Пародонтоз</h3>
+            <p>Пародонтит - это воспаление основного зубного аппарата, вызванное ...</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="advantages-box">
-            <img src="image/adv-item4.png" alt="" data-aos="fade-left">
-            <h4>30 видов манипуляций</h4>
-            <p>От кариеса и заканчивая пластическими операциями.</p>
+        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+          <div class="services-box">
+            <img src="images/tooth-4.png" alt="">
+            <h3>Чистка зубов</h3>
+            <p>В методах отбеливания используется перекись карбамида, которая реагирует с водой ...</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="advantages-box">
-            <img src="image/adv-item5.png" alt="" data-aos="fade-up-right">
-            <h4>Подарочные сертификаты</h4>
-            <p>проявите настоящую заботу о здоровье своих близких!</p>
+        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+          <div class="services-box">
+            <img src="images/tooth-5.png" alt="">
+            <h3>Защита от кариеса</h3>
+            <p>Самая важная часть профилактической стоматологии - чистить ...</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="advantages-box">
-            <img src="image/adv-item6.png" alt="" data-aos="fade-up-left">
-            <h4>Дисконтные карты</h4>
-            <p>3%-5%-10% каждому нашему постоянному клиенту.</p>
+        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+          <div class="services-box">
+            <img src="images/tooth-6.png" alt="">
+            <h3>Зубные Имплантаты</h3>
+            <p>Сначала устанавливается фиксатор имплантата, чтобы он мог остеоинтегрировать ...</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="advantages-box">
-            <img src="image/adv-item7.png" alt="" data-aos="fade-down-right">
-            <h4>Эконом времени</h4>
-            <p>Прием к нашим врачам в удобное время.</p>
+        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+          <div class="services-box">
+            <img src="images/tooth-7.png" alt="">
+            <h3>Брекиты</h3>
+            <p>По мнению ученых и историков, брекеты датируются ...</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-4 col-xs-12">
-          <div class="advantages-box">
-            <img src="image/adv-item8.png" alt="" data-aos="fade-down-left">
-            <h4>Полезные акции</h4>
-            <p>Большое количество специальных предложений.</p>
+        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+          <div class="services-box">
+            <img src="images/tooth-8.png" alt="">
+            <h3>Треснувший зуб</h3>
+            <p>Есть много разных типов трещин на зубах. Треснувшие зубы показывают ...</p>
           </div>
         </div>
       </div>
     </div>
-</section>
-<!-- Advantages section end -->
+  </section>
+<!-- Services section end -->
 
 <!-- Price section -->
 <section id = "price-list" class="pricing py-5">
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h2 class="display-4">Pricing</h2>
-  <p>Quickly build an effective pricing table for your potential customers with this Bootstrap example.</p>
-  <p>It’s built with default Bootstrap components and utilities with little customization.</p>
+  <h2 class="display-4">Цена</h2>
+  <hr class="main_bg_color dividersize_2_70 inline-block">
 </div>
   <div class="container">
     <div class="row">
-      <!-- Free Tier -->
-      <div class="col-lg-4">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class="card mb-5 mb-lg-0" data-aos="fade-up">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Lorem Ipsum</h5>
-            <h6 class="card-price text-center">100 тг<span class="period"></span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Lorem Ipsum</li>
-              <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Lorem Ipsum</li>
-              <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Lorem Ipsum</li>
-              <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Lorem Ipsum</li>
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Чистка зубов</h4>
+          </div>
+            <div class="card-price-boxe">
+              <h6 class="card-price text-center">10.000 тг</h6>
+              <p class="text-center"><span class="period">за 1 услугу</span></p>
+            </div>
+            <div class="card-body">
+            <ul class="fa-ul mt-2 ml-0 mr-0">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>1 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>2 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-times"></i></span>3 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-times"></i></span>4 услуга</li>
             </ul>
-            <a href="#" class="btn btn-block btn-primary text-uppercase">Заказать</a>
+            <div class="btn-card text-center">
+              <a href="#" class="btn text-uppercase">Заказать</a>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Plus Tier -->
-      <div class="col-lg-4">
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class="card mb-5 mb-lg-0" data-aos="fade-up">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Lorem Ipsum</h5>
-            <h6 class="card-price text-center">300 тг<span class="period"></span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Lorem Ipsum</strong></li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Lorem Ipsum</li>
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Чистка зубов</h4>
+          </div>
+            <div class="card-price-boxe">
+              <h6 class="card-price text-center">10.000 тг</h6>
+              <p class="text-center"><span class="period">за 1 услугу</span></p>
+            </div>
+            <div class="card-body">
+            <ul class="fa-ul mt-2 ml-0 mr-0">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>1 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>2 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-times"></i></span>3 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-times"></i></span>4 услуга</li>
             </ul>
-            <a href="#" class="btn btn-block btn-primary text-uppercase">Заказать</a>
+            <div class="btn-card text-center">
+              <a href="#" class="btn text-uppercase">Заказать</a>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Pro Tier -->
-      <div class="col-lg-4">
-        <div class="card" data-aos="fade-up">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Lorem Ipsum</h5>
-            <h6 class="card-price text-center">500тг<span class="period"></span></h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Lorem Ipsum</strong></li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Lorem</strong>Lorem Ipsum</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Lorem Ipsum</li>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="card mb-5 mb-lg-0" data-aos="fade-up">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Чистка зубов</h4>
+          </div>
+            <div class="card-price-boxe">
+              <h6 class="card-price text-center">10.000 тг</h6>
+              <p class="text-center"><span class="period">за 1 услугу</span></p>
+            </div>
+            <div class="card-body">
+            <ul class="fa-ul mt-2 ml-0 mr-0">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>1 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>2 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-times"></i></span>3 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-times"></i></span>4 услуга</li>
             </ul>
-            <a href="#" class="btn btn-block btn-primary text-uppercase">Заказать</a>
+            <div class="btn-card text-center">
+              <a href="#" class="btn text-uppercase">Заказать</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class="card mb-5 mb-lg-0" data-aos="fade-up">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Чистка зубов</h4>
+          </div>
+            <div class="card-price-boxe">
+              <h6 class="card-price text-center">10.000 тг</h6>
+              <p class="text-center"><span class="period">за 1 услугу</span></p>
+            </div>
+            <div class="card-body">
+            <ul class="fa-ul mt-2 ml-0 mr-0">
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>1 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-check"></i></span>2 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-times"></i></span>3 услуга</li>
+              <hr>
+              <li><span class="fa-li"><i class="fa fa-times"></i></span>4 услуга</li>
+            </ul>
+            <div class="btn-card text-center">
+              <a href="#" class="btn text-uppercase">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </div>
 </section>
 <!-- Price ection end -->
 
-<!-- Review section -->
-<section id="review">
 
+<!-- Portfolio section -->
+<section class="page_portfolio columns_padding_0 columns_margin_0">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="isotope_container isotope row masonry-layout">
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6">
+						<div class="vertical-item gallery-item">
+							<div class="item-media media-image-1">
+								<!-- <img src="images/dentist-01.jpg" alt=""> -->
+								<div class="media-links">
+									<div class="links-wrap">
+										<a class="p-view prettyPhoto " title="" rel="prettyPhoto[pp_gal]" href="images/dentist-01.jpg"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6">
+						<div class="vertical-item gallery-item">
+							<div class="item-media media-image-2">
+								<!-- <img src="images/dentist-02.jpg" alt=""> -->
+								<div class="media-links">
+									<div class="links-wrap">
+										<a class="p-view prettyPhoto " title="" rel="prettyPhoto[pp_gal]" href="images/dentist-02.jpg"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6">
+						<div class="vertical-item gallery-item">
+							<div class="item-media media-image-3">
+								<!-- <img src="images/dentist-03.jpg" alt=""> -->
+								<div class="media-links">
+									<div class="links-wrap">
+										<a class="p-view prettyPhoto " title="" rel="prettyPhoto[pp_gal]" href="images/dentist-03.jpg"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6">
+						<div class="vertical-item gallery-item">
+							<div class="item-media media-image-4">
+								<!-- <img src="images/dentist-04.jpg" alt=""> -->
+								<div class="media-links">
+									<div class="links-wrap">
+										<a class="p-view prettyPhoto " title="" rel="prettyPhoto[pp_gal]" href="images/dentist-04.jpg"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="isotope-item col-lg-6 col-md-8 col-sm-12">
+						<div class="vertical-item gallery-item">
+							<div class="item-media media-image-5">
+								<!-- <img src="images/dentist-01.jpg" alt=""> -->
+								<div class="media-links">
+									<div class="links-wrap">
+										<a class="p-view prettyPhoto " title="" rel="prettyPhoto[pp_gal]" href="images/dentist-05.jpg"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="isotope-item col-lg-3 col-md-4 col-sm-6">
+						<div class="vertical-item gallery-item">
+							<div class="item-media media-image-6">
+								<!-- <img src="images/dentist-01.jpg" alt=""> -->
+								<div class="media-links">
+									<div class="links-wrap">
+										<a class="p-view prettyPhoto " title="" rel="prettyPhoto[pp_gal]" href="images/dentist-06.jpg"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Portfolio section end -->
+
+<!-- Review section -->
+<section class="review section_padding_110" id="review">
+	<div class="container">
+		<div class="row topmargin_-5">
+			<div class="col-sm-12 text-center">
+				<h2 class="section_header margin_0">Что говорят наши пациенты</h2>
+				<hr class="main_bg_color dividersize_2_70 inline-block">
+
+                <div class="owl-carousel testimonials-owl-carousel topmargin_50"
+                    data-margin="30"
+                    data-items="9"
+                    data-loop="true"
+                    data-dots="true"
+                    data-nav="false"
+                    data-autoplay="false"
+                    data-responsive-xs="1"
+                    data-responsive-sm="2"
+                    data-responsive-md="3"
+                    data-responsive-lg="3"
+                >
+
+                    <div class="vertical-item testimonial-item">
+                        <div class="item-media bottommargin_25">
+                            <div class="with_backing small">
+                            	<img src="images/face01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-content">
+                        	<blockquote>
+                        		"Роналду лучший игрок в истории футбола"
+                        		<div class="item-meta">
+                        			<h6>Оралбекова Жадыра</h6>
+                        			<div class="signature signature-signature3"></div>
+                        		</div>
+                        	</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="vertical-item testimonial-item">
+                        <div class="item-media bottommargin_25">
+                            <div class="with_backing small">
+                            	<img src="images/face02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-content">
+                        	<blockquote>
+                        		"Отличная стоматология, профессионалы. Я очень довольна результатом. Спасибо что дарите улыбки."
+                        		<div class="item-meta">
+                        			<h6>Оспанова Асем</h6>
+                        			<div class="signature signature-signature2"></div>
+                        		</div>
+                        	</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="vertical-item testimonial-item">
+                        <div class="item-media bottommargin_25">
+                            <div class="with_backing small">
+                            	<img src="images/face03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-content">
+                        	<blockquote>
+                        		"Роналду лучший игрок в истории футбола"
+                        		<div class="item-meta">
+                        			<h6>Хэнри Джеймс</h6>
+                        			<div class="signature signature-signature1"></div>
+                        		</div>
+                        	</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="vertical-item testimonial-item">
+                        <div class="item-media bottommargin_25">
+                            <div class="with_backing small">
+                            	<img src="images/face01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-content">
+                        	<blockquote>
+                        		"Роналду лучший игрок в истории футбола"
+                        		<div class="item-meta">
+                        			<h6>Белла Франклин</h6>
+                        			<div class="signature signature-signature3"></div>
+                        		</div>
+                        	</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="vertical-item testimonial-item">
+                        <div class="item-media bottommargin_25">
+                            <div class="with_backing small">
+                            	<img src="images/face02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-content">
+                        	<blockquote>
+                        		"Роналду лучший игрок в истории футбола"
+                        		<div class="item-meta">
+                        			<h6>Камил Атурк</h6>
+                        			<div class="signature signature2"></div>
+                        		</div>
+                        	</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="vertical-item testimonial-item">
+                        <div class="item-media bottommargin_25">
+                            <div class="with_backing small">
+                            	<img src="images/face03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-content">
+                        	<blockquote>
+                        		"Роналду лучший игрок в истории футбола"
+                        		<div class="item-meta">
+                        			<h6>Хэнри Джеймс</h6>
+                        			<div class="signature signature1"></div>
+                        		</div>
+                        	</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="vertical-item testimonial-item">
+                        <div class="item-media bottommargin_25">
+                            <div class="with_backing small">
+                            	<img src="images/face01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-content">
+                        	<blockquote>
+                        		"Роналду лучший игрок в истории футбола"
+                        		<div class="item-meta">
+                        			<h6>Белла Франклин</h6>
+                        			<div class="signature signature3"></div>
+                        		</div>
+                        	</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="vertical-item testimonial-item">
+                        <div class="item-media bottommargin_25">
+                            <div class="with_backing small">
+                            	<img src="images/face02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-content">
+                        	<blockquote>
+                        		"Роналду лучший игрок в истории футбола"
+                        		<div class="item-meta">
+                        			<h6>Камил Ататурк</h6>
+                        			<div class="signature signature-signature2"></div>
+                        		</div>
+                        	</blockquote>
+                        </div>
+                    </div>
+
+                    <div class="vertical-item testimonial-item">
+                        <div class="item-media bottommargin_25">
+                            <div class="with_backing small">
+                            	<img src="images/face03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-content">
+                        	<blockquote>
+                        		"Роналду лучший игрок в истории футбола"
+                        		<div class="item-meta">
+                        			<h6>Henry James</h6>
+                        			<div class="signature signature-signature1"></div>
+                        		</div>
+                        	</blockquote>
+                        </div>
+                    </div>
+
+                </div><!-- .owl-carousel -->
+			</div>
+		</div>
+	</div>
 </section>
 <!-- Review section end -->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script src="js/scripts.js"></script>
+<!-- Banner section -->
+
+<section class="page_banner section_padding_50 texture_bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="banner border_radius_4 scheme_background">
+					<div class="banner-content border_radius_4 text-center">
+					    <div class="icon scheme_background"></div>
+						<p class="fontsize_24 regular bottommargin_10">Стоматология для людей, которые любят улыбаться</p>
+						<p class="semibold highlight2 size_normal">+ 7 (707) 298 02 45</p>
+						<div class="scheme_background">
+							<a href="#" class="btn text-uppercase" data-toggle="modal" data-target="#feedbackFormModal">Записаться на прием</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Banner section end -->
+
+<footer id="contact" class="page_footer theme_footer cs section_padding_top_50 section_padding_bottom_65">
+	<div class="container">
+		<div class="row bottommargin_5">
+			<div class="col-md-4 col-sm-6 to_animate" data-animation="scaleAppear">
+				<div class="widget widget_text topmargin_5">
+					<div class="bottommargin_15"><div class="logo-bottom"></div>
+					<h1>DentalExpert</h1></div>
+					<p>
+						В стоматологии DentalExpert — работают только дипломированные стоматологи, имеющие дополнительное образование в области протезирования зубов.
+					</p>
+					<div class="page_social_icons inline-block">
+						<a class="social-icon" href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a class="social-icon" href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a class="social-icon" href="#" title="Google"><i class="fa fa-google" aria-hidden="true"></i></a>
+						<a class="social-icon" href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 to_animate" data-animation="scaleAppear">
+				<div class="widget widget_text topmargin_20">
+					<h6>КОНТАКТНАЯ ИНФОРМАЦИЯ</h6>
+					<hr class="dividersize_2_35 margin_0">
+					<div class="media">
+						<div class="media-left">
+							<i class="fa fa-map-marker highlight fontsize_18"></i>
+						</div>
+						<div class="media-body">
+							г. Алматы, Сатпаева 22б
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<i class="fa fa-clock-o highlight fontsize_18"></i>
+						</div>
+						<div class="media-body">
+							09:00 - 22:00
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<i class="fa fa-phone highlight fontsize_18"></i>
+						</div>
+						<div class="media-body">
+							+7 (707) 298 02 45
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-4 col-sm-6 to_animate" data-animation="scaleAppear">
+				<div class="widget widget_text topmargin_20">
+					<h6>ОТЗЫВЫ</h6>
+					<hr class="dividersize_2_35 margin_0">
+					<blockquote>
+						"Зубные протезы действительно улучшают нашу улыбку и общий внешний вид. Они не только делают нас лучше, но и облегчают нашу жизнь."
+					</blockquote>
+					<div class="signature signature1"></div>
+				</div>
+			</div>
+			<!-- <div class="col-md-3 col-sm-6 to_animate" data-animation="scaleAppear">
+			</div> -->
+		</div>
+	</div>
+</footer>
+
+<section class="page_copyright ls section_padding_25">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center darklinks">
+				<p>&copy; 2020 DentalExpert.</p>
+			</div>
+		</div>
+	</div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"></script> -->
+  <script src="js/compressed.js"></script>
+  <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+  <script src="js/scripts.js"></script>
 </body>
 </html>
