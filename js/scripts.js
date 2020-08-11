@@ -237,3 +237,45 @@ $(function(){
 	setVideoCenter();
 	$(window).resize(setVideoCenter);
 });
+
+
+//ajax request to server
+$("#sendMail").on("click", function() {
+	var name = $("#form__name").val().trim();
+	var phone = $("#form__phone").val().trim();
+	var message = $("#form__message").val().trim();
+
+	$.ajax({
+			url:'mail.php',
+			type: 'POST',
+			cache: false,
+			data: { 'name': name, 'phone': phone, 'message': message },
+			dataType: 'html',
+			beforeSend: function() {
+				$("#sendMail").prop("disabled", true);
+			},
+			success: function(data) {
+					if(!data){
+							 $('#success_message').fadeIn().html("Произошла ошибка и сообщение не отправилось!");
+	 setTimeout(function() {
+		 $('#success_message').fadeOut("slow");
+							 }, 2000 );
+					}
+					 else{
+							 $('#success_message').css({'color':'#3CB371'});
+							 $('#success_message').fadeIn().html(data+" " +"мы приняли ваш запрос, скоро с вами свяжемся!");
+	 setTimeout(function() {
+		 $('#success_message').fadeOut("slow");
+							 }, 2000 );
+							 $("#contactForm").trigger("reset");
+							 $("#sendMail").prop("disabled", false);
+					 }
+			}
+	});
+});
+
+
+//toTop
+if (jQuery().UItoTop) {
+	jQuery().UItoTop({ easingType: 'easeOutQuart' });
+}

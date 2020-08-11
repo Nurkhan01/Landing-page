@@ -16,6 +16,20 @@
   <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"> -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+          <script type="text/javascript">
+            var map;
+
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [43.237269, 76.93315623],
+                    zoom: 13,
+					scrollWheelZoom: false
+                });
+
+                DG.marker([43.237269, 76.93315623]).addTo(map).bindPopup('стоматология DentalExperts!');
+            });
+        </script>
   <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
   <meta name="theme-color" content="#563d7c">
 </head>
@@ -65,7 +79,7 @@
   	<div class="video-content">
       <div class="text-center">
         <h1 class="display-4">Стоматология Алматы</h1>
-        <a href="#" class="btn text-uppercase">Заказать</a>
+        <a href="" class="btn text-uppercase" data-toggle="modal" data-target="#modalContactForm">Заказать</a>
       </div>
   	 </div>
   </div>
@@ -123,17 +137,33 @@
 			<div class="col-sm-12">
 				<div class="side-item about-item">
 					<div class="row display_table_md">
-						<div class="col-md-6 display_table_cell_md">
+						<div class="col-md-6 display_table_cell_md" data-aos="fade-right">
 							<div class="with_backing">
 								<img src="./images/about.jpg" alt="" class="border_radius_4">
 							</div>
 						</div>
-						<div class="col-md-6 display_table_cell_md">
+						<div class="col-md-6 display_table_cell_md" data-aos="fade-left">
 							<div class="item-content">
 								<h2 class="section_header margin_0">Мы DentalExpert</h2>
 								<hr class="main_bg_color-about dividersize_2_70 inline-block">
 								<p>
-									Зубные протезы действительно улучшают нашу улыбку и общий внешний вид. Они не только делают нас лучше, но и облегчают нашу жизнь. Наслаждайтесь простыми вещами, такими как еда, общение и улыбка. Забудьте о неудобных социальных встречах. В центре нашего внимания находится ваше общее самочувствие и помощь в достижении оптимального здоровья и эстетики.
+									Главный критерий для нас это гигиена и соблюдение санитарных норм.
+									Мы используем двухэтапное обезболивание лучшими анестетиками последнего
+									поколения.
+									Для лечения и протезирования используются новейшие сертифицированные препараты и
+									материалы производства Германии, Франции и США.
+									При пломбировании зубов в клинике используются только светоотверждаемые
+									гелиоматериалы, производится полная косметическая реставрация зубов, восстановление
+									разрушенных зубов на штифтах.
+									В нашей клинике безболезненно снимаются зубные отложения и налет с помощью
+									скайлера Kavo, аппарата фирмы Profiflex и эффективное отбеливание зубов препаратами
+									фирмы Beyond.
+									Команда ортодонтов трудится над созданием идальных улыбок, при помощи брекетов и
+									элайнеров по современным протоколам, обновляя метологию.
+									Лечение в наших клиниках направленно на максимальное сохранение живых зубов
+									пациентов.
+									Каждый день мы направляем все усилия на то чтобы, помочь Вам преодолеть душевный
+									дискомфорт перед посещением стоматолога, вне зависимости от Вашего возраста!.
 								</p>
 								<p class="bold text-uppercase bottommargin_2">
 									Стоматологическая профилактика
@@ -184,61 +214,76 @@
 <!-- About section end -->
 
 <!-- Services <section> -->
+<div class="services-background">
   <section class="services" id="services">
     <div class="container services-boxes">
       <h2 class="text-center">Наши услуги</h2>
       <div class="row">
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="services-box text-center">
+          <div class="services-box text-center" data-aos="fade-up">
             <img src="images/tooth-1.png" alt="">
             <h3>Защита зубов</h3>
             <p>Есть только 2 стоматологических направления, которые специализируются только на эстетике зубов ...</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box text-center">
+          <div class="services-box text-center" data-aos="fade-down">
             <img src="images/tooth-2.png" alt="">
             <h3>Зубной камень</h3>
             <p>Типы мостов могут быть разными, в зависимости от того, как они ...</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box">
+          <div class="services-box" data-aos="fade-right">
             <img src="images/tooth-3.png" alt="">
             <h3>Пародонтоз</h3>
             <p>Пародонтит - это воспаление основного зубного аппарата, вызванное ...</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box">
+          <div class="services-box" data-aos="fade-left">
             <img src="images/tooth-4.png" alt="">
             <h3>Чистка зубов</h3>
             <p>В методах отбеливания используется перекись карбамида, которая реагирует с водой ...</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box">
+          <div class="services-box" data-aos="fade-up-right">
             <img src="images/tooth-5.png" alt="">
             <h3>Защита от кариеса</h3>
             <p>Самая важная часть профилактической стоматологии - чистить ...</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box">
+          <div class="services-box" data-aos="fade-up-left">
             <img src="images/tooth-6.png" alt="">
             <h3>Зубные Имплантаты</h3>
             <p>Сначала устанавливается фиксатор имплантата, чтобы он мог остеоинтегрировать ...</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box">
+          <div class="services-box" data-aos="fade-down-right">
             <img src="images/tooth-7.png" alt="">
             <h3>Брекиты</h3>
             <p>По мнению ученых и историков, брекеты датируются ...</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box">
+          <div class="services-box" data-aos="fade-down-left">
+            <img src="images/tooth-8.png" alt="">
+            <h3>Треснувший зуб</h3>
+            <p>Есть много разных типов трещин на зубах. Треснувшие зубы показывают ...</p>
+          </div>
+        </div>
+		        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+          <div class="services-box" data-aos="fade-right">
+            <img src="images/tooth-8.png" alt="">
+            <h3>asdasd зуб</h3>
+            <p>Есть много разных типов трещин на зубах. Треснувшие зубы показывают ...</p>
+          </div>
+        </div>
+		        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+          <div class="services-box" data-aos="fade-left">
             <img src="images/tooth-8.png" alt="">
             <h3>Треснувший зуб</h3>
             <p>Есть много разных типов трещин на зубах. Треснувшие зубы показывают ...</p>
@@ -247,6 +292,7 @@
       </div>
     </div>
   </section>
+  </div>
 <!-- Services section end -->
 
 <!-- Price section -->
@@ -264,21 +310,21 @@
             <h4 class="my-0 font-weight-normal">Чистка зубов</h4>
           </div>
             <div class="card-price-boxe">
-              <h6 class="card-price text-center">10.000 тг</h6>
-              <p class="text-center"><span class="period">за 1 услугу</span></p>
+              <h6 class="card-price text-center">15.000 тг</h6>
+              <p class="text-center"><span class="period">3 этапа</span></p>
             </div>
             <div class="card-body">
             <ul class="fa-ul mt-2 ml-0 mr-0">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>1 услуга</li>
+              <li><i class="fa fa-check"></i>ультразвуковая чистка</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>2 услуга</li>
+              <li><i class="fa fa-check"></i>Airflow</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-times"></i></span>3 услуга</li>
+              <li><i class="fa fa-check"></i></i>Полировка</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-times"></i></span>4 услуга</li>
+              <li><i class="fa fa-check"></i></i>Фторирование зубов</li>
             </ul>
             <div class="btn-card text-center">
-              <a href="#" class="btn text-uppercase">Заказать</a>
+              <a href="" class="btn text-uppercase" data-toggle="modal" data-target="#modalContactForm">Заказать</a>
             </div>
           </div>
         </div>
@@ -287,24 +333,24 @@
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class="card mb-5 mb-lg-0" data-aos="fade-up">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Чистка зубов</h4>
+            <h4 class="my-0 font-weight-normal">Лечение кариеса</h4>
           </div>
             <div class="card-price-boxe">
-              <h6 class="card-price text-center">10.000 тг</h6>
-              <p class="text-center"><span class="period">за 1 услугу</span></p>
+              <h6 class="card-price text-center">от 7500 тг</h6>
+              <p class="text-center"><span class="period">любой сложности</span></p>
             </div>
             <div class="card-body">
             <ul class="fa-ul mt-2 ml-0 mr-0">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>1 услуга</li>
+              <li><i class="fa fa-check"></i>Коффердам</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>2 услуга</li>
+              <li><i class="fa fa-check"></i>Пломбирование</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-times"></i></span>3 услуга</li>
+              <li><i class="fa fa-check"></i>Лечение каналов</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-times"></i></span>4 услуга</li>
+              <li><i class="fa fa-check"></i>Лечение осложнений</li>
             </ul>
             <div class="btn-card text-center">
-              <a href="#" class="btn text-uppercase">Заказать</a>
+              <a href="" class="btn text-uppercase" data-toggle="modal" data-target="#modalContactForm">Заказать</a>
             </div>
           </div>
         </div>
@@ -313,24 +359,24 @@
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class="card mb-5 mb-lg-0" data-aos="fade-up">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Чистка зубов</h4>
+            <h4 class="my-0 font-weight-normal">Брекеты</h4>
           </div>
             <div class="card-price-boxe">
-              <h6 class="card-price text-center">10.000 тг</h6>
-              <p class="text-center"><span class="period">за 1 услугу</span></p>
+              <h6 class="card-price text-center">от 50.000 тг</h6>
+              <p class="text-center"><span class="period">все виды</span></p>
             </div>
             <div class="card-body">
             <ul class="fa-ul mt-2 ml-0 mr-0">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>1 услуга</li>
+              <li><i class="fa fa-check"></i>Лигатурные</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>2 услуга</li>
+              <li><i class="fa fa-check"></i>Самолигирующие</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-times"></i></span>3 услуга</li>
+              <li><i class="fa fa-check"></i>Каппы для выравнивания зубов</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-times"></i></span>4 услуга</li>
+              <li><i class="fa fa-check"></i>Пластинки для выравнивания зубов</li>
             </ul>
             <div class="btn-card text-center">
-              <a href="#" class="btn text-uppercase">Заказать</a>
+              <a href="" class="btn text-uppercase" data-toggle="modal" data-target="#modalContactForm">Заказать</a>
             </div>
           </div>
         </div>
@@ -339,24 +385,24 @@
       <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class="card mb-5 mb-lg-0" data-aos="fade-up">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Чистка зубов</h4>
+            <h4 class="my-0 font-weight-normal">Импланты</h4>
           </div>
             <div class="card-price-boxe">
               <h6 class="card-price text-center">10.000 тг</h6>
-              <p class="text-center"><span class="period">за 1 услугу</span></p>
+              <p class="text-center"><span class="period">любой сложности</span></p>
             </div>
             <div class="card-body">
             <ul class="fa-ul mt-2 ml-0 mr-0">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>1 услуга</li>
+              <li><i class="fa fa-check"></i>Базальная</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>2 услуга</li>
+              <li><i class="fa fa-check"></i>Лазерная</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-times"></i></span>3 услуга</li>
+              <li><i class="fa fa-check"></i>Широкий выбор произволителей</li>
               <hr>
-              <li><span class="fa-li"><i class="fa fa-times"></i></span>4 услуга</li>
+              <li><i class="fa fa-check"></i>All_in-4</li>
             </ul>
             <div class="btn-card text-center">
-              <a href="#" class="btn text-uppercase">Заказать</a>
+              <a href="" class="btn text-uppercase" data-toggle="modal" data-target="#modalContactForm">Заказать</a>
             </div>
           </div>
         </div>
@@ -650,7 +696,7 @@
 						<p class="fontsize_24 regular bottommargin_10">Стоматология для людей, которые любят улыбаться</p>
 						<p class="semibold highlight2 size_normal">+ 7 (707) 298 02 45</p>
 						<div class="scheme_background">
-							<a href="#" class="btn text-uppercase" data-toggle="modal" data-target="#feedbackFormModal">Записаться на прием</a>
+							<a href="" class="btn text-uppercase" data-toggle="modal" data-target="#modalContactForm">Записаться на прием</a>
 						</div>
 					</div>
 				</div>
@@ -659,6 +705,10 @@
 	</div>
 </section>
 <!-- Banner section end -->
+
+<div class="container-fluid">
+  <div id="map" style="width:100%; height:400px"></div>  
+</div>
 
 <footer id="contact" class="page_footer theme_footer cs section_padding_top_50 section_padding_bottom_65">
 	<div class="container">
@@ -734,7 +784,49 @@
 			</div>
 		</div>
 	</div>
+</section>
 
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Напишите нам</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fa fa-user-o" aria-hidden="true"></i>
+          <label data-error="wrong" data-success="right" for="form__name">Ваше имя</label>
+          <input type="text" id="form__name" class="form-control validate">
+        </div>
+
+        <div class="md-form mb-5">
+          <i class="fa fa-mobile" aria-hidden="true"></i>
+          <label data-error="wrong" data-success="right" for="form__phone">Номер телефона</label>
+          <input type="text" id="form__phone" class="form-control validate">
+        </div>
+
+        <div class="md-form">
+          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+          <label data-error="wrong" data-success="right" for="form__message">Сообщение</label>
+          <textarea type="text" id="form__message" class="md-textarea form-control" rows="4"></textarea>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-unique">Отправить <i class="fa fa-paper-plane-o" aria-hidden="true" id="sendMail"></i></button>
+        <div id="success_message" class="ajax_response"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<a href="#" id="toTop">
+  <span id="toTopHover"></span>
+</a>
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

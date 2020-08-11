@@ -9,7 +9,9 @@ html, body {
   height: 100%;
   font-family: Roboto;
 }
-
+body:not(.modal-open){
+  padding-right: 0px !important;
+}
 /* Header section */
 header .container {
   max-width: 1180px;
@@ -197,6 +199,14 @@ header .container {
 	padding: 11%;
 	font-size: 20px;
 }
+
+.video-content h1{
+	color: rgba(255,255,255,0.3);
+	-webkit-text-stroke: black 1px;
+	font-weight: bold;
+	text-shadow:  2px 4px 4px;
+}
+
 .video-content:before {
 	z-index: -1;
 	content: '';
@@ -507,7 +517,9 @@ div.services-background{
 }
 
 .services .col-md-3:first-child,
-.services .col-md-3:nth-child(5){
+.services .col-md-3:nth-child(5), 
+.services .col-md-3:nth-child(9),
+.services .col-md-3:nth-child(10){
     border-left: none;
 }
 
@@ -516,6 +528,14 @@ div.services-background{
 .services .col-md-3:nth-child(7),
 .services .col-md-3:nth-child(8){
     border-bottom: none;
+}
+
+.services .col-md-3:nth-child(9),
+.services .col-md-3:nth-child(10){
+	
+}
+.services-boxes .row {
+  justify-content: center;
 }
 
 @media only screen and (max-width: 766px) {
@@ -594,8 +614,20 @@ section.pricing {
 }
 
 .fa-ul li {
-    margin-left: 45%;
-    margin-right: 0;
+   text-align: center;
+}
+
+.fa-ul li i{
+   padding-right: 2%;
+}
+
+.card-body ul{
+	height: 300px;
+}
+
+.btn-card {
+	padding-top:1.5rem; 
+	border-top: 1px solid rgba(0,0,0,.1);; 
 }
 
 .btn-card a {
@@ -752,6 +784,10 @@ a img { -webkit-transition: all 0.15s ease-in-out 0s; transition: all 0.15s ease
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+.twitter, .facebook {
+	display: none;
+} 
 /* Portfolio section end */
 
 
@@ -1171,8 +1207,22 @@ i.fontsize_18 {
 }
 /* Copy right section end */
 
+/* map */
+#map {
+	margin:5% 0 5% 0;
+}
+/* end map */
 
+/* to top button */
+#toTop { bottom: 0; right: 0; display: none; width: 60px; height: 40px; overflow: hidden; position: fixed; text-decoration: none; z-index: 9999; font-size: 0; color: transparent; background-color: #4fc9e0; opacity: 0.7; }
 
+#toTop:after { color: #ffffff; content: '\f106'; font-size: 16px; line-height: 40px; font-family: 'FontAwesome'; text-align: center; display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; }
+
+#toTopHover, #toTop:hover { bottom: 3px; opacity: 1; }
+
+#toTop:hover:after { color: #ffffff; }
+
+#toTop:active, #toTop:focus { outline: medium none; }
 
 /* ---------------------------- Plugins ------------------------ */
 
