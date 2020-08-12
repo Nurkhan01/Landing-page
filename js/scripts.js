@@ -75,7 +75,7 @@ $(document).scroll(function(){
 					$('.header__link').css('color', 'black');
        } else {
           $('header').css({"background":"rgba(0,0,0,0.1)", 'border-bottom' : 'none'});
-					$('.header__link').css({'color' : 'rgb(240,240,240)'});
+					$('.header__link').css({'color' : 'black'});
        }
 });
 // About
@@ -192,7 +192,7 @@ jQuery('.isotope_container').each(function(index) {
 // Link
 jQuery(function($){
 $('a[href*="#"]').on('click.smoothscroll', function( e ){
-var hash    = this.hash, _hash   = hash.replace(/#/,''), theHref = $(this).attr('href').replace(/#.*/, '');
+var hash = this.hash, _hash = hash.replace(/#/,''), theHref = $(this).attr('href').replace(/#.*/, '');
 if( theHref && location.href.replace(/#.*/,'') != theHref ) return;
 var $target = _hash === '' ? $('body') : $( hash + ', a[name="'+ _hash +'"]').first();
 if( ! $target.length ) return;
@@ -240,35 +240,34 @@ $(function(){
 
 
 //ajax request to server
-$("#sendMail").on("click", function() {
-	var name = $("#form__name").val().trim();
-	var phone = $("#form__phone").val().trim();
-	var message = $("#form__message").val().trim();
+$(".sendMail").on("click", function() {
+	var name = $(".form__name").val().trim();
+	var phone = $(".form__phone").val().trim();
 
 	$.ajax({
 			url:'mail.php',
 			type: 'POST',
 			cache: false,
-			data: { 'name': name, 'phone': phone, 'message': message },
+			data: { 'name': name, 'phone': phone},
 			dataType: 'html',
 			beforeSend: function() {
-				$("#sendMail").prop("disabled", true);
+				$(".sendMail").prop("disabled", true);
 			},
 			success: function(data) {
 					if(!data){
-							 $('#success_message').fadeIn().html("Произошла ошибка и сообщение не отправилось!");
+							 $('.ajax_response').fadeIn().html("Произошла ошибка и сообщение не отправилось!");
 	 setTimeout(function() {
-		 $('#success_message').fadeOut("slow");
+		 $('.ajax_response').fadeOut("slow");
 							 }, 2000 );
 					}
 					 else{
-							 $('#success_message').css({'color':'#3CB371'});
-							 $('#success_message').fadeIn().html(data+" " +"мы приняли ваш запрос, скоро с вами свяжемся!");
+							 $('.ajax_response').css({'color':'#3CB371'});
+							 $('.ajax_response').fadeIn().html(data+" " +"мы приняли ваш запрос, скоро с вами свяжемся!");
 	 setTimeout(function() {
-		 $('#success_message').fadeOut("slow");
+		 $('.ajax_response').fadeOut("slow");
 							 }, 2000 );
-							 $("#contactForm").trigger("reset");
-							 $("#sendMail").prop("disabled", false);
+							 $(".contact-form").trigger("reset");
+							 $(".sendMail").prop("disabled", false);
 					 }
 			}
 	});

@@ -8,6 +8,7 @@
   <meta name="author" content="DentalExpert">
   <title>Стоматология</title>
   <!-- Bootstrap core CSS -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -69,64 +70,81 @@
     </div>
   </header>
 
-  <div class="video-box">
-  	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="video/Dentist_6.mp4" type="video/mp4">
-      <source src="video/Dentist_6.webm" type="video/webm">
-      <source src="video/Dentist_6.ogv" type="video/ogv">
-  	</video>
-
-  	<div class="video-content">
-      <div class="text-center">
-        <h1 class="display-4">Стоматология Алматы</h1>
-        <a href="" class="btn text-uppercase" data-toggle="modal" data-target="#modalContactForm">Заказать</a>
-      </div>
-  	 </div>
-  </div>
-
-  <!-- Carusel section -->
-  <!-- <section class="head-carusel">
-    <div class="carusel">
-    <div class="owl-carousel owl-theme">
-      <div class="item"><img src="images/slide01.jpg" alt=""></div>
-      <div class="item"><img src="images/slide02.jpg" alt=""></div>
-      <div class="item"><img src="images/slide03.jpg" alt=""></div>
-    </div>
-   </div>
-    <div class="carusel-text">
-      <h1>Стоматология для жизни</h1>
-      <p>Если твоя улыбка тебе не идет, то ты должен идти ко мне! Семейная стоматология с женским акцентом.</p>
-      <a href="#" class="btn text-uppercase">Заказать</a>
-    </div>
-  </section> -->
-  <!-- Carusel section end -->
+  <section class="intro_section page_mainslider ds">
+  	<div class="flexvideo">
+  		<ul class="video-elements">
+  			<li>
+          <div class="video-box">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+              <source src="video/Dentist_6.mp4" type="video/mp4">
+              <source src="video/Dentist_6.webm" type="video/webm">
+              <source src="video/Dentist_6.ogv" type="video/ogv">
+            </video>
+          </div>
+          <div class="container">
+    					<div class="row">
+    						<div class="col-sm-12">
+    							<div class="video_description_wrapper">
+    								<div class="video_description">
+    									<div class="intro-layer" data-animation="slideExpandUp">
+    										<h3>Стоматология Алматы</h3>
+    									</div>
+    									<div class="intro-layer" data-animation="slideExpandUp">
+    										<p class="fontsize_20">Если твоя улыбка тебе не идет, то ты должен идти ко мне! Семейная стоматология с женским акцентом.</p>
+    										<a href="" class="btn text-uppercase" data-toggle="modal" data-target="#modalContactForm">Записаться на прием</a>
+    									</div>
+    								</div> <!-- eof .slide_description -->
+    							</div> <!-- eof .slide_description_wrapper -->
+    						</div> <!-- eof .col-* -->
+    					</div><!-- eof .row -->
+    				</div><!-- eof .container -->
+  			</li>
+  		</ul>
+  	</div> <!-- eof flexslider -->
+  </section>
 
 <!-- Boxes section -->
-  <section class="boxes-section">
-    <div class="container header-boxes">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  text-left header-box-1">
-          <img src="images/certification.png" alt="">
-          <h3>Сертификация</h3>
-          <p>Панчетта ут из тушеной говядины, свиная отбивная из аликвипа с тремя наконечниками. Коровья говядина eu бекон jowl pastrami.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  text-left header-box-2">
-          <img src="images/time.png" alt="">
-          <h3>24/7 Открыто</h3>
-          <p>Долор солонина ипсум, филе миньон, филе нулья, миньон. Boudin landjaeger свиная грудинка.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  text-left header-box-3">
-          <img src="images/personal.png" alt="">
-          <h3>Профессиональный персонал</h3>
-          <p>Привет мир. Как дела у тебя?</p>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12  text-left header-box-4">
-          <img src="images/like.png" alt="">
-          <h3>Справедливые цены</h3>
-          <p>Куриная лепешка Lorem, филе филе миньон, молотая голень, и id labourum short.</p>
-        </div>
-      </div>
-    </div>
+<section class="columns_padding_0 columns_margin_0" id="features-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+				<div class="with_padding maindarker3_bg_color topborder_radius_4 feature-teaser">
+				    <img src="images/certification.png" alt="" class="teaser_icon">
+				    <p class="fontsize_18 semibold topmargin_15 bottommargin_5">Сертификация</p>
+				    <p class="margin_0">
+				    	Привет мир!
+				    </p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+				<div class="with_padding maindarker2_bg_color topborder_radius_4 feature-teaser">
+				    <img src="images/time.png" alt="" class="teaser_icon">
+				    <p class="fontsize_18 semibold topmargin_15 bottommargin_5">24/7 Открыто</p>
+				    <p class="margin_0">
+				    	Привет мир!
+				    </p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+				<div class="with_padding maindarker1_bg_color topborder_radius_4 feature-teaser">
+				    <img src="images/personal.png" alt="" class="teaser_icon">
+				    <p class="fontsize_18 semibold topmargin_15 bottommargin_5">Персонал</p>
+				    <p class="margin_0">
+				          Привет мир!
+				    </p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+				<div class="with_padding main_bg_color topborder_radius_4 feature-teaser">
+				    <img src="images/like.png" alt="" class="teaser_icon ">
+				    <p class="fontsize_18 semibold topmargin_15 bottommargin_5">Цены</p>
+				    <p class="margin_0">
+				    	Привет мир!
+				    </p>
+				</div>
+			</div>
+		</div>
+	</div>
   </section>
 <!-- Boxes section end -->
 
@@ -137,12 +155,12 @@
 			<div class="col-sm-12">
 				<div class="side-item about-item">
 					<div class="row display_table_md">
-						<div class="col-md-6 display_table_cell_md" data-aos="fade-right">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 display_table_cell_md mb-5" data-aos="fade-right">
 							<div class="with_backing">
 								<img src="./images/about.jpg" alt="" class="border_radius_4">
 							</div>
 						</div>
-						<div class="col-md-6 display_table_cell_md" data-aos="fade-left">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 display_table_cell_md" data-aos="fade-left">
 							<div class="item-content">
 								<h2 class="section_header margin_0">Мы DentalExpert</h2>
 								<hr class="main_bg_color-about dividersize_2_70 inline-block">
@@ -219,74 +237,88 @@
     <div class="container services-boxes">
       <h2 class="text-center">Наши услуги</h2>
       <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
           <div class="services-box text-center" data-aos="fade-up">
             <img src="images/tooth-1.png" alt="">
-            <h3>Защита зубов</h3>
-            <p>Есть только 2 стоматологических направления, которые специализируются только на эстетике зубов ...</p>
+            <h3>Базальная имплантация</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box text-center" data-aos="fade-down">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="services-box" data-aos="fade-left">
             <img src="images/tooth-2.png" alt="">
-            <h3>Зубной камень</h3>
-            <p>Типы мостов могут быть разными, в зависимости от того, как они ...</p>
+            <h3>Брекеты</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box" data-aos="fade-right">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="services-box text-center" data-aos="fade-down">
             <img src="images/tooth-3.png" alt="">
-            <h3>Пародонтоз</h3>
-            <p>Пародонтит - это воспаление основного зубного аппарата, вызванное ...</p>
+            <h3>Виниры</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box" data-aos="fade-left">
-            <img src="images/tooth-4.png" alt="">
-            <h3>Чистка зубов</h3>
-            <p>В методах отбеливания используется перекись карбамида, которая реагирует с водой ...</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box" data-aos="fade-up-right">
-            <img src="images/tooth-5.png" alt="">
-            <h3>Защита от кариеса</h3>
-            <p>Самая важная часть профилактической стоматологии - чистить ...</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box" data-aos="fade-up-left">
-            <img src="images/tooth-6.png" alt="">
-            <h3>Зубные Имплантаты</h3>
-            <p>Сначала устанавливается фиксатор имплантата, чтобы он мог остеоинтегрировать ...</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box" data-aos="fade-down-right">
-            <img src="images/tooth-7.png" alt="">
-            <h3>Брекиты</h3>
-            <p>По мнению ученых и историков, брекеты датируются ...</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
-          <div class="services-box" data-aos="fade-down-left">
-            <img src="images/tooth-8.png" alt="">
-            <h3>Треснувший зуб</h3>
-            <p>Есть много разных типов трещин на зубах. Треснувшие зубы показывают ...</p>
-          </div>
-        </div>
-		        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-122">
           <div class="services-box" data-aos="fade-right">
-            <img src="images/tooth-8.png" alt="">
-            <h3>asdasd зуб</h3>
-            <p>Есть много разных типов трещин на зубах. Треснувшие зубы показывают ...</p>
+            <img src="images/tooth-4.png" alt="">
+            <h3>Зуб мудрости</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
           </div>
         </div>
-		        <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
           <div class="services-box" data-aos="fade-left">
+            <img src="images/tooth-5.png" alt="">
+            <h3>Имплантация</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="services-box" data-aos="fade-up-right">
+            <img src="images/tooth-6.png" alt="">
+            <h3>Капа для выравнивания зубов</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="services-box" data-aos="fade-up-left">
+            <img src="images/tooth-7.png" alt="">
+            <h3>Корейские импланты</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="services-box" data-aos="fade-down-right">
             <img src="images/tooth-8.png" alt="">
-            <h3>Треснувший зуб</h3>
-            <p>Есть много разных типов трещин на зубах. Треснувшие зубы показывают ...</p>
+            <h3>Лазерная имплантация</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="services-box" data-aos="fade-down-left">
+            <img src="images/tooth-9.png" alt="">
+            <h3>Ортодонт</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
+          </div>
+        </div>
+		    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="services-box" data-aos="fade-right">
+            <img src="images/tooth-10.png" alt="">
+            <h3>Пломба</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
+          </div>
+        </div>
+		    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="services-box" data-aos="fade-left">
+            <img src="images/tooth-11.png" alt="">
+            <h3>Протез</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="services-box" data-aos="fade-left">
+            <img src="images/tooth-12.png" alt="">
+            <h3>Удаление</h3>
+            <p>Привет мир! Месси Лучший игрок мира.</p>
           </div>
         </div>
       </div>
@@ -304,13 +336,13 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-122">
         <div class="card mb-5 mb-lg-0" data-aos="fade-up">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Чистка зубов</h4>
           </div>
             <div class="card-price-boxe">
-              <h6 class="card-price text-center">15.000 тг</h6>
+              <h6 class="card-price text-center">15.000 тенге</h6>
               <p class="text-center"><span class="period">3 этапа</span></p>
             </div>
             <div class="card-body">
@@ -330,13 +362,13 @@
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
         <div class="card mb-5 mb-lg-0" data-aos="fade-up">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Лечение кариеса</h4>
           </div>
             <div class="card-price-boxe">
-              <h6 class="card-price text-center">от 7500 тг</h6>
+              <h6 class="card-price text-center">от 7500 тенге</h6>
               <p class="text-center"><span class="period">любой сложности</span></p>
             </div>
             <div class="card-body">
@@ -356,13 +388,13 @@
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
         <div class="card mb-5 mb-lg-0" data-aos="fade-up">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Брекеты</h4>
           </div>
             <div class="card-price-boxe">
-              <h6 class="card-price text-center">от 50.000 тг</h6>
+              <h6 class="card-price text-center">от 50.000 тенге</h6>
               <p class="text-center"><span class="period">все виды</span></p>
             </div>
             <div class="card-body">
@@ -382,13 +414,13 @@
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
         <div class="card mb-5 mb-lg-0" data-aos="fade-up">
           <div class="card-header">
             <h4 class="my-0 font-weight-normal">Импланты</h4>
           </div>
             <div class="card-price-boxe">
-              <h6 class="card-price text-center">10.000 тг</h6>
+              <h6 class="card-price text-center">10.000 тенге</h6>
               <p class="text-center"><span class="period">любой сложности</span></p>
             </div>
             <div class="card-body">
@@ -532,7 +564,7 @@
                         </div>
                         <div class="item-content">
                         	<blockquote>
-                        		"Роналду лучший игрок в истории футбола"
+                        		"Месси лучший игрок в истории футбола"
                         		<div class="item-meta">
                         			<h6>Оралбекова Жадыра</h6>
                         			<div class="signature signature-signature3"></div>
@@ -566,7 +598,7 @@
                         </div>
                         <div class="item-content">
                         	<blockquote>
-                        		"Роналду лучший игрок в истории футбола"
+                        		"Месси лучший игрок в истории футбола"
                         		<div class="item-meta">
                         			<h6>Хэнри Джеймс</h6>
                         			<div class="signature signature-signature1"></div>
@@ -583,7 +615,7 @@
                         </div>
                         <div class="item-content">
                         	<blockquote>
-                        		"Роналду лучший игрок в истории футбола"
+                        		"Месси лучший игрок в истории футбола"
                         		<div class="item-meta">
                         			<h6>Белла Франклин</h6>
                         			<div class="signature signature-signature3"></div>
@@ -600,7 +632,7 @@
                         </div>
                         <div class="item-content">
                         	<blockquote>
-                        		"Роналду лучший игрок в истории футбола"
+                        		"Месси лучший игрок в истории футбола"
                         		<div class="item-meta">
                         			<h6>Камил Атурк</h6>
                         			<div class="signature signature2"></div>
@@ -617,7 +649,7 @@
                         </div>
                         <div class="item-content">
                         	<blockquote>
-                        		"Роналду лучший игрок в истории футбола"
+                        		"Месси лучший игрок в истории футбола"
                         		<div class="item-meta">
                         			<h6>Хэнри Джеймс</h6>
                         			<div class="signature signature1"></div>
@@ -634,7 +666,7 @@
                         </div>
                         <div class="item-content">
                         	<blockquote>
-                        		"Роналду лучший игрок в истории футбола"
+                        		"Месси лучший игрок в истории футбола"
                         		<div class="item-meta">
                         			<h6>Белла Франклин</h6>
                         			<div class="signature signature3"></div>
@@ -651,7 +683,7 @@
                         </div>
                         <div class="item-content">
                         	<blockquote>
-                        		"Роналду лучший игрок в истории футбола"
+                        		"Месси лучший игрок в истории футбола"
                         		<div class="item-meta">
                         			<h6>Камил Ататурк</h6>
                         			<div class="signature signature-signature2"></div>
@@ -668,7 +700,7 @@
                         </div>
                         <div class="item-content">
                         	<blockquote>
-                        		"Роналду лучший игрок в истории футбола"
+                        		"Месси лучший игрок в истории футбола"
                         		<div class="item-meta">
                         			<h6>Henry James</h6>
                         			<div class="signature signature-signature1"></div>
@@ -694,7 +726,7 @@
 					<div class="banner-content border_radius_4 text-center">
 					    <div class="icon scheme_background"></div>
 						<p class="fontsize_24 regular bottommargin_10">Стоматология для людей, которые любят улыбаться</p>
-						<p class="semibold highlight2 size_normal">+ 7 (707) 298 02 45</p>
+						<p class="semibold highlight2 size_normal">+ 7 (702) 231 95 91</p>
 						<div class="scheme_background">
 							<a href="" class="btn text-uppercase" data-toggle="modal" data-target="#modalContactForm">Записаться на прием</a>
 						</div>
@@ -706,11 +738,83 @@
 </section>
 <!-- Banner section end -->
 
+<!-- map -->
 <div class="container-fluid">
-  <div id="map" style="width:100%; height:400px"></div>  
+  <div id="map" style="width:100%; height:400px"></div>
 </div>
+<!-- end map -->
 
-<footer id="contact" class="page_footer theme_footer cs section_padding_top_50 section_padding_bottom_65">
+<!-- Contact section -->
+<section id="contact" class="contact">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-8 to_animate" data-animation="scaleAppear">
+
+				<h4 class="bottommargin_30">Форма обратной связи</h4>
+
+				<form class="contact-form row columns_padding_5">
+
+
+						<div class="col-sm-6">
+							<div class="contact-form-name">
+								<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control mb-3 form__name" placeholder="Имя">
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="contact-form-phone">
+								<input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control form__phone" placeholder="Телефон">
+							</div>
+						</div>
+
+
+						<div class="col-sm-12">
+							<div class="contact-form-submit topmargin_30">
+								<button type="button" class="btn btn-unique mb-5 sendMail">Отправить сообщение <i class="fa fa-paper-plane-o" aria-hidden="true" id="sendMail-contact"></i></button>
+                <div class="ajax_response"></div>
+							</div>
+						</div>
+
+				</form>
+			</div>
+
+			<div class="col-md-4 to_animate" data-animation="scaleAppear">
+				<h4 class="bottommargin_30">Контактная информация</h4>
+				<div class="widget widget_text topmargin_20">
+					<div class="media">
+						<div class="media-left">
+							<i class="fa fa-map-marker highlight fontsize_18"></i>
+						</div>
+						<div class="media-body">
+								г. Алматы, Сатпаева 22б
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<i class="fa fa-clock-o highlight fontsize_18"></i>
+						</div>
+						<div class="media-body">
+							09:00 - 22:00
+						</div>
+					</div>
+					<div class="media">
+						<div class="media-left">
+							<i class="fa fa-phone highlight fontsize_18"></i>
+						</div>
+						<div class="media-body">
+							+7 (702) 231 95 91
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- Contact section end -->
+
+<footer class="page_footer theme_footer cs section_padding_top_50 section_padding_bottom_65">
 	<div class="container">
 		<div class="row bottommargin_5">
 			<div class="col-md-4 col-sm-6 to_animate" data-animation="scaleAppear">
@@ -722,7 +826,6 @@
 					</p>
 					<div class="page_social_icons inline-block">
 						<a class="social-icon" href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a class="social-icon" href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 						<a class="social-icon" href="#" title="Google"><i class="fa fa-google" aria-hidden="true"></i></a>
 						<a class="social-icon" href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					</div>
@@ -754,7 +857,7 @@
 							<i class="fa fa-phone highlight fontsize_18"></i>
 						</div>
 						<div class="media-body">
-							+7 (707) 298 02 45
+							+7 (702) 231 95 91
 						</div>
 					</div>
 				</div>
@@ -797,28 +900,30 @@
         </button>
       </div>
       <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <i class="fa fa-user-o" aria-hidden="true"></i>
-          <label data-error="wrong" data-success="right" for="form__name">Ваше имя</label>
-          <input type="text" id="form__name" class="form-control validate">
-        </div>
 
-        <div class="md-form mb-5">
-          <i class="fa fa-mobile" aria-hidden="true"></i>
-          <label data-error="wrong" data-success="right" for="form__phone">Номер телефона</label>
-          <input type="text" id="form__phone" class="form-control validate">
-        </div>
+        <form class="contact-form row columns_padding_5">
 
-        <div class="md-form">
-          <i class="fa fa-commenting-o" aria-hidden="true"></i>
-          <label data-error="wrong" data-success="right" for="form__message">Сообщение</label>
-          <textarea type="text" id="form__message" class="md-textarea form-control" rows="4"></textarea>
-        </div>
+						<div class="col-lg-12">
+							<div class="contact-form-name">
+								<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control mb-3 form__name" placeholder="Имя">
+							</div>
+						</div>
 
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-unique">Отправить <i class="fa fa-paper-plane-o" aria-hidden="true" id="sendMail"></i></button>
-        <div id="success_message" class="ajax_response"></div>
+						<div class="col-lg-12">
+							<div class="contact-form-phone">
+								<input type="text" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control form__phone" placeholder="Телефон">
+							</div>
+						</div>
+
+
+						<div class="col-sm-12">
+							<div class="contact-form-submit topmargin_30 text-center">
+								<button type="button" class="btn btn-unique mb-5 sendMail">Отправить сообщение <i class="fa fa-paper-plane-o" aria-hidden="true" id="sendMail-contact"></i></button>
+                <div class="ajax_response"></div>
+							</div>
+						</div>
+
+				</form>
       </div>
     </div>
   </div>
